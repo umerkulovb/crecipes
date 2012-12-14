@@ -37,7 +37,7 @@ begin
     _cset :db_host, 'localhost'
     _cset :db_adapter, 'postgresql'
     _cset :db_pool, 5
-
+    _cset :db_port, nil
     
     #Web
     _cset :app_server_lib, 'unicorn'

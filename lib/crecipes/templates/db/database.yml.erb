@@ -6,4 +6,6 @@ production:
   username: <%= db_user %>
   password: <%= db_password %>
   host: <%= db_host %>
+  <%unless db_port.nil? %>
   port: <%= db_port %>
+  <%end%>
