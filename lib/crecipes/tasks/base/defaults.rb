@@ -1,7 +1,7 @@
 begin
   Capistrano::Configuration.instance.load do
 
-    set :deploy_to, "/home/#{user}/apps/#{application}/"
+    _cset :deploy_to, "/home/#{user}/apps/#{application}/"
 
     # User details
     _cset :user, 'deployer'
