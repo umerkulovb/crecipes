@@ -12,7 +12,7 @@ begin
     _cset(:application) { abort "Please specify the short name of your application, set :application, 'foo'" }
     _cset :with_rmagick, true
     _cset :use_rbenv_gemset, true
-    _cset :ruby_version, '1.9.3-p327'
+    _cset :ruby_version, '1.9.3-p374'
     _cset :rail_env, 'production'
 
     #Phusion passenger settings
