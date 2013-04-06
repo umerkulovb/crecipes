@@ -13,7 +13,7 @@ begin
     _cset :with_rmagick, true
     _cset :use_rbenv_gemset, true
     _cset :ruby_version, '1.9.3-p374'
-    _cset :rail_env, 'production'
+    _cset :rails_env, 'production'
 
     #Phusion passenger settings
     _cset :passenger_module, 'nginx'
