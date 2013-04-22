@@ -3,7 +3,7 @@ begin
     namespace :db do
       task :setup, roles: :app do
         run "mkdir -p #{shared_path}/config"
-        helpers.move_template "db/database.yml.erb","#{shared_path}/config/database.yml"
+        chelpers.move_template "db/database.yml.erb","#{shared_path}/config/database.yml"
       end
 
       desc "Symlink the database.yml file into latest release"

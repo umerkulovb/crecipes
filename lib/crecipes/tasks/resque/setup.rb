@@ -3,7 +3,7 @@ begin
     namespace :resque do
       desc "Installing resque dependencies"
       task :setup do
-        helpers.apt_install "redis-server"
+        chelpers.apt_install "redis-server"
       end
     end
   end

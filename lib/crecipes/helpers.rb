@@ -1,6 +1,6 @@
 module Crecipes
   module Helpers
-    #Install packages. Run helpers.apt_install %w(package1 package2) or helpers.apt_install "package1 package2"
+    #Install packages. Run chelpers.apt_install %w(package1 package2) or chelpers.apt_install "package1 package2"
     def apt_install(packages)
       packages = packages.split(/\s+/) if packages.respond_to?(:split)
       packages = Array(packages)
@@ -22,4 +22,4 @@ module Crecipes
     end
   end
 end
-Capistrano.plugin :helpers, Crecipes::Helpers
+Capistrano.plugin :chelpers, Crecipes::Helpers

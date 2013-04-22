@@ -3,8 +3,8 @@ begin
     namespace :nodejs do
       desc "Install the latest release of Node.js"
       task :install, roles: :app do
-        helpers.apt_add_repo "chris-lea/node.js"
-        helpers.apt_install "nodejs"
+        chelpers.apt_add_repo "chris-lea/node.js"
+        chelpers.apt_install "nodejs"
       end
     end
   end

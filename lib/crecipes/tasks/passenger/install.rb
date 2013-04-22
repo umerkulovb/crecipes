@@ -3,7 +3,7 @@ begin
     namespace :passenger do
       desc "Install Passenger"
       task :install, roles: :app do
-        helpers.apt_install "libcurl4-openssl-dev"
+        chelpers.apt_install "libcurl4-openssl-dev"
         run "gem install passenger --no-ri --no-rdoc"
         run "rbenv rehash"
         command = "#{sudo} sh -c \"PATH=\"$PATH\" passenger-install-#{passenger_module}-module --auto"

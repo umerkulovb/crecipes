@@ -4,11 +4,11 @@ begin
       desc "Install rbenv, Ruby prequisites, Ruby and the Bundler gem"
       task :install, roles: :app do
         # install prequisites
-        helpers.apt_update
-        helpers.apt_install "curl git-core build-essential zlib1g-dev openssl libssl-dev libreadline-dev"
+        chelpers.apt_update
+        chelpers.apt_install "curl git-core build-essential zlib1g-dev openssl libssl-dev libreadline-dev"
 
         if with_rmagick
-          helpers.apt_install "imagemagick libmagickcore-dev libmagickwand-dev"
+          chelpers.apt_install "imagemagick libmagickcore-dev libmagickwand-dev"
         end
 
         # install rbenv and plugins

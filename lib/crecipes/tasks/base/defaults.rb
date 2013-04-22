@@ -58,8 +58,8 @@ begin
     namespace :deploy do
       desc "Set Up the server"
       task :install do
-        helpers.apt_update
-        helpers.apt_install "python-software-properties libxml2 libxml2-dev libxslt1-dev"
+        chelpers.apt_update
+        chelpers.apt_install "python-software-properties libxml2 libxml2-dev libxslt1-dev"
       end
     end
   end

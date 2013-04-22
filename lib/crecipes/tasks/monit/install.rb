@@ -3,7 +3,7 @@ begin
     namespace :monit do
       desc "Installing monit"
       task :install do
-        helpers.apt_install 'monit'
+        chelpers.apt_install 'monit'
       end
     end
   end
