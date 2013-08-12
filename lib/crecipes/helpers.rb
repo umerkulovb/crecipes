@@ -12,7 +12,7 @@ module Crecipes
     end
 
     def apt_add_repo(repository)
-      run "#{sudo} apt-add-repository -y ppa:#{repository}"
+      run "#{sudo} add-apt-repository -y ppa:#{repository}"
       apt_update
     end
 
