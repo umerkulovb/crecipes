@@ -11,14 +11,14 @@ begin
         run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
       end
 
-      desc "Loads databse schema"
+      desc "Loads database schema"
       task :load_schema, roles: :db do
-        run "cd #{current_path} && RAILS_ENV=#{rail_env} bundle exec rake db:schema:load"
+        run "cd #{current_path} && RAILS_ENV=#{rails_env} bundle exec rake db:schema:load"
       end
 
-      desc "Loads databse seed"
+      desc "Loads database seed"
       task :seed, roles: :db do
-        run "cd #{current_path} && RAILS_ENV=#{rail_env} bundle exec rake db:seed"
+        run "cd #{current_path} && RAILS_ENV=#{rails_env} bundle exec rake db:seed"
       end
     end
   end
